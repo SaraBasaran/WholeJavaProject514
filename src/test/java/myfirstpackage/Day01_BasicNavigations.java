@@ -10,6 +10,10 @@ public class Day01_BasicNavigations {
     public static void main(String[] args) throws InterruptedException {
         //3.Step: Set driver and path
         System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+    //this way is not totally recommended we can use in this way or we can add driver name directly to pom file
+        //**So far we used drivers in our local.We can use WebDriverManager dependency on a maven project.This helps
+        //us to setup and use driver faster.This is the second way of using driver(more recommended).From now on, we will
+        //use WebDriverManager.For this, go to mvnrepository.com and get the WebDriverManager dependency
 
         //4.Step: Create chrome driver object
         WebDriver driver= new ChromeDriver();
